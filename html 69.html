@@ -12,7 +12,8 @@ Description part one coding a website in HTML
     <title>Mozilla splash page</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <style>
-      /* Global styles */
+      /* header and body setup */
+
       html {
         font-family: 'Open Sans', sans-serif;
         background: url(pattern.png);
@@ -27,24 +28,32 @@ Description part one coding a website in HTML
       }
 
       /* Header styling */
+
       header {
-        height: 150px;
+        display: grid;
+        grid-template-columns: 1fr auto; /* 1fr for the text and auto for the image */
+        align-items: center;
+        height: 100px;
+        padding: 0 20px; 
       }
 
       header img {
-        width: 100px;
+        width: 75px;
         position: absolute;
-        right: 32.5px;
-        top: 32.5px;
+        right: 20px;
+        top: 20px;
       }
 
       h1 {
-        font-size: 50px;
-        line-height: 140px;
-        margin: 0 0 0 32.5px;
+        font-size: 40px;
+        line-height: 100px;
+        margin: 0 0 0 25px;
+        margin: 0;
       }
 
-      /* Main content styling */
+
+      /* main section and video styling */
+
       main {
         background: #ccc;
       }
@@ -67,7 +76,8 @@ Description part one coding a website in HTML
         max-width: 100%;
       }
 
-      /* Further info links */
+      /* further info links */
+
       .further-info {
         clear: left;
         padding: 40px 0;
@@ -91,6 +101,7 @@ Description part one coding a website in HTML
       }
 
       /* Red panda image */
+
       .red-panda img {
         display: block;
         max-width: 100%;
@@ -100,19 +111,13 @@ Description part one coding a website in HTML
   <body>
     <header>
       <h1>Mozilla</h1>
-      <img src="firefox_logo-only_RGB.png" alt="firefoxl">
+      <img src = "firefox_logo-only_RGB.png" alt="firefoxl">
+
     </header>
 
     <main>
       <article>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/ojcNcvb1olg?si=IoWTF36e7KaKvpGQ"
-          title="Mozilla video"
-          style="border: 0px;"
-          allowfullscreen
-        ></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ojcNcvb1olg?si=IoWTF36e7KaKvpGQ"></iframe>
 
         <h2>Rocking the free web</h2>
 
@@ -122,24 +127,26 @@ Description part one coding a website in HTML
       </article>
 
       <div class="further-info">
+        <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img src="firefox_logo-only_RGB.png" alt="firefoxl">
+          <img src = "firefox_logo-only_RGB.png" alt="firefoxl">
         </a>
         <a href="https://www.mozilla.org/">
-          <img src="mozilla-dinosaur-head.png" alt="mozilladinosaurhead">
+          <img src = "mozilla-dinosaur-head.png" alt="mozilladinosaurhead">
         </a>
         <a href="https://addons.mozilla.org/">
-          <img src="firefox-addons.jpg" alt="firefox">
+          <img src = "firefox-addons.jpg" alt="firefox">
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img src="mdn.svg" alt="mdn">
+          <img src = "mdn.svg" alt="mdn">
         </a>
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
-        <img src="red-panda.jpg" alt="red panada">
+        <img src = "red-panda.jpg" alt = "red panada">
       </div>
+
     </main>
   </body>
 </html>
