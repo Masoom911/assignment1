@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+  }
+  
+  /* WRITE YOUR CODE BELOW HERE */
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Thin.woff2') format('woff2'),
+        url('Montserrat-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Merriweather Sans';
+    src: url('MerriweatherSans-Regular.woff2') format('woff2'),
+        url('MerriweatherSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+  html {
+    font-family: "Merriweather Sans", serif; /* Body font */
+    font-size: 10px; /* site-wide font size of 10px */
+  }
+  
+  h1, h2 {
+    font-family: "Montserrat", sans-serif; /* Heading font */
+    letter-spacing: 2px; /* letter spacing for headings */
+  }
+  
+  h1 {
+    font-size: 5rem; /* Font size for h1 */
+    text-align: center; /* Center align h1 */
+  }
+  
+  h2 {
+    font-size: 3.2rem; /* Font size for h2 */
+  }
+  
+  p, li {
+    font-size: 1.6rem; /* Font size for body text */
+    line-height: 1.5; /* Line height for body text */
+    letter-spacing: 0.5px; /* Letter spacing for body text */
+  }
+  
+  section h2 + p {
+    text-indent: 20px; /* Indent first paragraph after h2 */
+  }
+  
+  a:link, a:visited {
+    color: #a66; /* Link color */
+  }
+  
+  a:focus, a:hover {
+    text-decoration: none; /* Remove underline on focus/hover */
+  }
+  
+  a:active {
+    color: transparent; /* Transparent color on active */
+    text-shadow: 0px 0px 1px #f00,
+                 0px 0px 2px #f00,
+                 0px 0px 3px black,
+                 0px 0px 4px /* Text shadow on active */
+  }
+  
+  a {
+    outline: none; /* Remove default outline */
+  }
+  
+  a[href*="http"] {
+    padding-right: 19px; /* Padding for external links */
+    background: url(external-link-52.png) no-repeat 100% 0; /* External link icon */
+    background-size: 16px 16px; /* Size of the icon */
+  }
+  
+  ul, ol {
+    margin: 1.6rem 0; /* Margin for lists */
+  }
+  
+  ul {
+    list-style-type: square;
+  }
+  
+  ol {
+    list-style-type: lower-latin;
+  }
+  
+  /* Navigation menu */
+  nav ul {
+    padding-left: 0; /* Remove padding from nav ul */
+    margin-top: 0.8rem; /* Top of the Margin for nav li */
+  }
+  
+  nav li {
+    list-style-type: none; /* Remove bullet points from nav li */
+    margin-bottom: 2rem; /* Bottom of the Margin for nav li */
+  }
+  
+  nav li a {
+    text-decoration: none; /* Remove text-decoration from nav links */
+    display: inline-block;
+    width: 100%;
+    line-height: 3;
+    text-align: center; /* Center align nav links */
+    font-size: 2.5rem; /* Font size for nav links */
+    border: 1px solid #a66;
+  }
+  
+  nav li a:focus, nav li a:hover {
+    color: white;
+    background: #a66;/* Background  focus/hover */
+  }
+  
+
+  nav li a:active {
+    color: white;
+    background: black; /* Background color to be black on click */ 
+
+  }
+
+  
