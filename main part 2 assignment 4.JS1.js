@@ -1,3 +1,8 @@
+/* // <!--
+    // Name: Masoom Yosofi
+    // File: style.css
+    // Date: wednesday February 26
+    // image generator */
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
 
@@ -9,11 +14,11 @@ const imgArr = ["pic1.jpg","pic2.jpg","pic3.jpg","pic4.jpg","pic5.jpg"];
 
 /* Declaring the alternative text for each image file */
 const imgAlts = [
-    {"pic1": "Closeup of a blue human eye"},
-    {"pic2": "A Rock formed in the shape of a wave"}, 
-    {"pic3": "White and purple pansies"}, 
-    {"pic4": "A section of a wall from pharoah's tomb"}, 
-    {"pic5": "A closeup of a moth on a leaf"}
+    {"pic1": "A blue human eye"},
+    {"pic2": "A Rock the shape of a wave"}, 
+    {"pic3": "purple and white pansies"}, 
+    {"pic4": "A part of a wall from pharoah's tomb"}, 
+    {"pic5": "A moth on a leaf"}
 ];
 /* Looping through images */
 for (let i = 0; i < imgArr.length; i++) {
